@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bharath-e-bank</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <img id="logo" src="./images/The_World_Bank_logo.png" alt="" width="100" height="90"/>
+      <h1 id="bankname"> Bank of Scorpio</h1>
+      <div class="nav-items">
+        <div class="nav-div">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#options">Options</a>
+            <a href="#about">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero-section">
+      <div id="home" class="hero-text-container">
+        <h1>Next generation<br />
+          digital banking</h1>
+        <p>Take your financial life online. Your easy bank account<br/>
+          will be a one-stop-shop for spending,saving,<br/>budgeting,investing,
+          and much more.</p>
+      </div>
+      <div class="hero-img-container">
+        <img src="./images/image-mockups.png" alt="" />
+      </div>
+    </header>
+    
+    <div id="options">
+        <button>New USER</button>
+        <button id="buttn">Check Balance</button>
+        <button id="buttn4">Withdraw</button>
+        <button id="buttn2">Deposit</button>
+        <button id="buttn5">Transfer Money</button>
+        <button id="buttn3">Transaction Report</button>
+        
+    </div>
+    
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div id="close"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+                <img src="./images/balance.png" style="width: 100px;height: 100px">
+                <div class="form">
+                <form method="post"  class="checkbal" action="checkbalance.jsp">
+                    <h1 class="usrid">Enter ID : </h1><br><input type="number" name="id"><br><br>
+                    <h1 class="usrid">Enter password :</h1> <br><input type="password" name="pass">
+                    <br><br><br>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </div>
+      
+    <div class="bg-modal2">
+        <div class="modal-content2">
+            <div id="close1"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+            <img src="./images/balance.png" style="width: 100px;height: 100px">
+            <div class="form">
+              <form method="post"  class="checkbal" action="deposit.jsp">
+                  <h1 class="usrid">Enter ID : </h1><br><input type="number" name="id1"><br><br>
+                  <h1 class="usrid">Enter password :</h1> <br><input type="password" name="pass"><br><br>
+                  <h1 class="usrid">Enter amount :</h1> <br><input type="number" name="amnt"><br><br>
+                  <h1 class="usrid">Enter description :</h1> <br><input type="text" name="desc">
+                  
+                  <br><br><br>
+                  <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+        </div>
+    </div>
+      
+    <div class="bg-modal3">
+        <div class="modal-content">
+            <div id="close3"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+            <img src="./images/balance.png" style="width: 100px;height: 100px">
+            <div class="form">
+              <form method="post"  class="shwrprt" action="showreport.jsp">
+                  <h1 class="usrid">Enter ID : </h1><br><input type="number" name="id"><br><br>
+                  <h1 class="usrid">Enter password :</h1> <br><input type="password" name="pass">
+                  <br><br><br>
+                  <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+        </div>
+    </div>
+      
+    <div class="bg-modal4">
+        <div class="modal-content2">
+            <div id="close4"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+            <img src="./images/balance.png" style="width: 100px;height: 100px">
+            <div class="form">
+              <form method="post"  class="checkbal" action="withdraw.jsp">
+                  <h1 class="usrid">Enter ID : </h1><br><input type="number" name="id1"><br><br>
+                  <h1 class="usrid">Enter password :</h1> <br><input type="password" name="pass"><br><br>
+                  <h1 class="usrid">Enter amount :</h1> <br><input type="number" name="amnt"><br><br>
+                  <h1 class="usrid">Enter description :</h1> <br><input type="text" name="desc">
+                  
+                  <br><br><br>
+                  <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-modal5">
+        <div class="modal-content3">
+            <div id="close5"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+            <img src="./images/balance.png" style="width: 100px;height: 100px">
+            <div class="form">
+              <form method="post"  class="checkbal" action="transfer.jsp">
+                  <h1 class="usrid">Enter sender ID : </h1><br><input type="number" name="id1"><br><br>
+                  <h1 class="usrid">Enter password :</h1> <br><input type="password" name="pass"><br><br>
+                  <h1 class="usrid">Enter receiver ID : </h1><br><input type="number" name="id2"><br><br>
+                  <h1 class="usrid">Enter amount :</h1> <br><input type="number" name="amnt"><br><br>
+                  <h1 class="usrid">Enter description :</h1> <br><input type="text" name="desc">
+                  <br><br><br>
+                  <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+        </div>
+    </div>
+      
+
+    <div class="bg-modal6">
+        <div class="modal-content4">
+            <div id="close5"><img src="./images/close.png " style="width: 30px;height: 30px"></div>
+            <img src="./images/balance.png" style="width: 100px;height: 100px">
+            <div class="form" id="userform">
+                <form method="post"  class="checkbal" action="" onclick="return checkPass()">
+                    <h1 class="usrid">Enter Name : </h1><br><input type="text" name="name"><br><br>
+                    <h1 class="usrid">Enter Account Type :</h1> <br><input type="text" name="actype"><br><br>
+                    <h1 class="usrid">Enter Balance(Minimum 1000): </h1><br><input type="number" name="bal"><br><br>
+                    <h1 class="usrid">Enter Phone Number :</h1> <br><input type="number" name="phne"><br><br>
+                    <div id="newuserdiv">
+                    <h1 class="usrid">Enter Address :</h1> <br><input type="text" name="addrs"><br><br>
+                    <h1 class="usrid">Enter Gender :</h1> <br><input type="text" name="gen"><br><br>
+                    <h1 class="usrid">Enter Email :</h1> <br><input type="email" name="mail"><br><br>
+                    <h1 class="usrid">Enter Password :</h1> <br><input type="password" name="pass1"><br><br>
+                    <h1 class="usrid">Enter Re-Type Password :</h1> <br><input type="password" name="pass2"><br><br>
+                    </div>
+                    <br><br><br>
+                    <input type="submit" value="SUBMIT">                    
+                </form>
+            </div>
+        </div>
+    </div>
+      
+      
+    <div class="container">
+      <section class="why-us">
+        <h1>Why choose bharath bank?</h1>
+        <p>We leverage open banking to turn your bank account into your
+          financial hub.<br />Control your finances like never before.</p>
+      </section>
+      <section class="features-section">
+        <div class="feature-item">
+          <img src="./images/icon-online.svg" alt="" />
+          <h1>Online Banking</h1>
+          <p>Our modern web and mobile<br />
+            applications allow you to keep<br />
+            track of your finances wherever<br />
+            you are in the world.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/icon-budgeting.svg" alt="" />
+          <h1>Simple Budgeting</h1>
+          <p>See exactly where your money<br />
+            goes every month.Recieve<br />
+            notifications when you're close to<br />
+            hitting your limits.
+          </p></div>
+
+        <div class="feature-item">
+          <img src="./images/icon-onboarding.svg" alt="" />
+          <h1>Fast Onboarding</h1>
+          <p>We don't do branches.Open your<br />
+            accound minutes online and start<br />
+            taking controll of your finances<br />
+            right away.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/icon-api.svg" alt="" />
+          <h1>Open API</h1>
+          <p>Manage your savings, investments,<br />
+            pension and much more from one<br />
+            account.Tracking your money has<br />
+            never been easier.</p>
+        </div>
+      </section>
+    <footer id="about" class="footer">
+      <div class="footer-container">
+        <div class="social-container">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+        </div>
+        <div class="menu">
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="menu">
+          <a href="#">Carriers</a>
+          <a href="#">Support</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+        <script>
+            document.getElementById("buttn").addEventListener("click",function(){
+                document.querySelector(".bg-modal").style.display = 'flex';
+            });
+            document.getElementById("buttn2").addEventListener("click",function(){
+                document.querySelector(".bg-modal2").style.display = 'flex';
+            });
+            document.getElementById("buttn3").addEventListener("click",function(){
+                document.querySelector(".bg-modal3").style.display = 'flex';
+            });
+            document.getElementById("buttn4").addEventListener("click",function(){
+                document.querySelector(".bg-modal4").style.display = 'flex';
+            });
+            document.getElementById("buttn5").addEventListener("click",function(){
+                document.querySelector(".bg-modal5").style.display = 'flex';
+            });
+            document.getElementById("close").addEventListener("click",function(){
+                document.querySelector(".bg-modal").style.display = 'none';
+            });
+            document.getElementById("close1").addEventListener("click",function(){
+                document.querySelector(".bg-modal2").style.display = 'none';
+            });
+            document.getElementById("close3").addEventListener("click",function(){
+                document.querySelector(".bg-modal3").style.display = 'none';
+            });
+            document.getElementById("close4").addEventListener("click",function(){
+                document.querySelector(".bg-modal4").style.display = 'none';
+            });
+            document.getElementById("close5").addEventListener("click",function(){
+                document.querySelector(".bg-modal5").style.display = 'none';
+            });
+            
+            function checkPass()
+            {
+                var pswd = document.getElementByID("pass1");
+                var pswd1 = document.getElementByID("pass2");
+                if(pswd===pswd1)
+                {
+                    document.getElementByID("userform").innerHTML = "Registration Successfull";
+                }
+            }
+        </script>
+    </body>
+
+</html>
